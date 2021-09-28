@@ -21,7 +21,7 @@
         
             <a class="nav-item nav-link active" href="#">Orinoco</a>
             <a class="nav-item nav-link" href="index.html">Acceuil</a>
-            <a class="nav-item nav-link" href="panier.html">Panier<span id="panierIcone"></span></a>
+            <a class="nav-item nav-link" href="panier.html">Panier <span id="panierIcone"></span></a>
   
         </nav>
 
@@ -38,7 +38,7 @@
     
 
   
-  <section id="emptyStorage" >
+    <section id="emptyStorage" >
       <div class="container my-3 py-1">
           <div class="text-center my-5 shadow p-3 mb-5 bg-body rounded">
               <h1 class="fs-1 font-weight-bold text-primary my-5">Oups, votre panier semble vide, commencez vos achats
@@ -51,32 +51,33 @@
 
     
     <section id="storageContent" >
-      <div class="container" >
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-sm-6">
-            <table class="table table-bordered" >
+          <div class="col-12 col-md-6">
+            <table class="table table-bordered">
               <thead>
                 <tr>
                   <th scope="col">Nom</th>
                   <th scope="col">Quantitée</th>
                   <th scope="col">prix</th>
                   <th scope="col">Total</th>
+                  <th scope="col">Supprimer ligne</th>
                 </tr>
               </thead>
               <tbody id="storageTab"></tbody>
             </table>
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-sm-6">
-                 <div class="border bg-light" >Total panier : <span id="totalPanier"></span> </div>
-                </div>
-              </div>
-            </div>
-            <button id="viderPanier" class="viderPanier">Vider tous le Panier </button>
           </div>
         </div>
       </div>
-      
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6">
+            <div class="border bg-light" >Total panier : <span id="totalPanier"></span> </div>
+              <button id="viderPanier" class="viderPanier">Vider tous le Panier </button>
+          </div>
+        </div>
+      </div>
+            
     </section>
 
     <section>

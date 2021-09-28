@@ -1,5 +1,6 @@
 const itemParent = document.getElementById("itemParent");
 
+// Récupérer les articles depuis l'API
 async function getItems(){
     try {
         const request = await fetch("http://localhost:3000/api/teddies")
@@ -10,6 +11,8 @@ async function getItems(){
         console.log(error);
     }
 };
+
+// Afficher les données récupéré depuis l'API dans le DOM
 function addItemsInDom(arrayItems){
     if (Array.isArray(arrayItems) || arrayItems.length < 1){
         arrayItems.forEach(item => {
@@ -29,8 +32,10 @@ function addItemsInDom(arrayItems){
             </div> 
              `;
         itemParent.insertAdjacentHTML("beforeend", htmlElement)
+       
         });
     }
+    panierIcone()
 }
-window.onload = getItems();
 
+window.onload = getItems();
