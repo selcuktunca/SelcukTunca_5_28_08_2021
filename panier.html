@@ -53,15 +53,15 @@
     <section id="storageContent" >
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-6">
-            <table class="table table-bordered">
+          <div class="col-12 col-md-6 table-responsive">
+            <table class="table table-bordered table-sm">
               <thead>
                 <tr>
                   <th scope="col">Nom</th>
                   <th scope="col">Quantitée</th>
                   <th scope="col">prix</th>
                   <th scope="col">Total</th>
-                  <th scope="col">Supprimer ligne</th>
+                  <th scope="col">&#128465</th>
                 </tr>
               </thead>
               <tbody id="storageTab"></tbody>
@@ -70,10 +70,10 @@
         </div>
       </div>
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-6">
-            <div class="border bg-light" >Total panier : <span id="totalPanier"></span> </div>
-              <button id="viderPanier" class="viderPanier">Vider tous le Panier </button>
+        <div class="row justify-content-center mb-5">
+          <div class="text-center">
+            <div class="border text-light bg-primary p-1 mb-1" >Total panier : <span class="font-weight-bold" id="totalPanier">0 €</span> </div>
+              <button id="viderPanier" class="viderPanier btn btn-danger">Vider le Panier </button>
           </div>
         </div>
       </div>
@@ -133,6 +133,7 @@
     </footer>
 
 <script src="panier.js"></script>
+<script src="function.js"></script>
 
 </body>
 

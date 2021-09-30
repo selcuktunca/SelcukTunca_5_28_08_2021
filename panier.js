@@ -41,7 +41,7 @@ storageProducts.forEach((product, i) => {
     <td><input type = "number" value = ${product.quantity} min=0 max=10 id="quantity${product.name}"></td>
     <td>${product.price / 100}€</td>
     <td id="productTotal${product.name}" class="productTotal">${product.quantity * product.price / 100}€</td>
-    <td><button id="delete${product.name}">supprimer</button></td></tr>
+    <td><button id="delete${product.name}">&#10060</button></td></tr>
     `)
   
 //Gestion des quantités
