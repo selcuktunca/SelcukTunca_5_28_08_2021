@@ -1,3 +1,5 @@
+
+
 //Recup du panier dans le local storage
 let storageProducts = JSON.parse(localStorage.getItem("panier")) ? JSON.parse(localStorage.getItem("panier")) : [];
 
@@ -26,12 +28,6 @@ function totalDuPanier (){
 
   panierIcone()
 }
-//Funtion pour signaler un produit dans le panier
-function panierIcone (){
-  let actualProducts = JSON.parse(localStorage.getItem("panier"))
-  document.getElementById("panierIcone").innerHTML = actualProducts.length;
-
-}
 
 //Boucle sur le panier affichage des information dans le html
 storageProducts.forEach((product, i) => {
@@ -59,8 +55,7 @@ storageProducts.forEach((product, i) => {
     }})
         
     localStorage.setItem("panier", JSON.stringify(actualProducts))
-    storageProducts = actualProducts
-        
+    storageProducts = actualProducts;    
     totalDuPanier();
    
     })
