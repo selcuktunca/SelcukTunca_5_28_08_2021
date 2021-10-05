@@ -16,10 +16,12 @@ class Product {
   }
 };
 
+let product
+
 fetch(newUrl)
   .then((response) => response.json())
   .then((data) => {
-    product = new Product(data._id, data.name, data.price, 1, data.imageUrl);
+    product  = new Product(data._id, data.name, data.price, 1, data.imageUrl);
     addCard(data);
   });
 console.log(newUrl);
