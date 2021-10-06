@@ -41,8 +41,8 @@
     <section id="emptyStorage" >
       <div class="container my-3 py-1">
           <div class="text-center my-5 shadow p-3 mb-5 bg-body rounded">
-              <h1 class="fs-1 font-weight-bold text-primary my-5">Oups, votre panier semble vide, commencez vos achats
-              </h1>
+              <h2 class="fs-1 font-weight-bold text-primary my-5">Oups, votre panier semble vide, commencez vos achats
+              </h2>
               <a role="button" class="btn btn-primary text-uppercase my-3" href="index.html">C'est par
                   ici</a>
           </div>
@@ -51,6 +51,7 @@
 
     
     <section id="storageContent" >
+      <h3 class="text-center fs-2">Détail du panier</h3>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 table-responsive">
@@ -61,7 +62,7 @@
                   <th scope="col">Quantitée</th>
                   <th scope="col">prix</th>
                   <th scope="col">Total</th>
-                  <th scope="col">&#128465</th>
+                  <th scope="col">&#128465;</th>
                 </tr>
               </thead>
               <tbody id="storageTab"></tbody>
@@ -81,9 +82,9 @@
     </section>
 
     <section>
-    
+      <h3 class="text-center fs-2">Vos informations</h3>
         <div class="container">
-            <form class="row g-3 needs-validation" novalidate action="" method="POST" id="form">
+            <form class="row g-3 needs-validation justify-content-center" novalidate action="#" method="POST" id="form">
                 <div class="col-md-4">
                   <label for="nom" class="form-label">Nom *</label>
                   <input type="text" class="form-control" id="nom" name="nom" required ="required" placeholder="Dupont">
@@ -95,7 +96,7 @@
                   
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-8">
                   <label for="adresse" class="form-label">Adresse de livraison *</label>
                   <input type="text" class="form-control" id="adresse" name="adresse" required="required" placeholder="12 rue république"
                   pattern="^[a-zA-Z0-9]{1}[a-zA-Z'À-ÿ -]+$" >
@@ -114,7 +115,7 @@
                     pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" />
                 </div>
                     
-                <div class="col-12">
+                <div class="col-12 d-flex justify-content-center">
                   <input type="submit" value="Commander" id="envoiFormulaire" />
                 </div>
             </form>
@@ -131,6 +132,7 @@
         </ul>
         <p class="copyright text-center">Orinoco © 2021</p>
     </footer>
+
 <script src="function.js"></script>
 <script src="panier.js"></script>
 
