@@ -17,7 +17,7 @@ Voici mon 5 ème projet demander pour ma formation developpeur web ( chez Open C
 
 PRESENTATION DU PROJET
 
-Recrutée en tant que developpeur front-end par une entreprise de commerce en ligne ( Orinoco). On me demande de crée un MVP ( back end deja fournie) . 3 choix de type de produit me sont donner . Ce projet portera sur les apareils photos .
+Recrutée en tant que developpeur front-end par une entreprise de commerce en ligne ( Orinoco). On me demande de crée un MVP ( back end deja fournie) . 3 choix de type de produit me sont donner . Ce projet portera sur les teddies .
 
 CAHIER MVP
 
